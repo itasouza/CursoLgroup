@@ -1,0 +1,131 @@
+﻿<!--com a teg doctype nos padroes da documentação do html 5 nós informamos os navegadores que estamos querendo renderizar-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <!--inserimos as configurações da nossa página-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--inserindo a meta tag de keywords onde definimos as palavras chaves-->
+    <meta name="keywords" content="Lgroup, cadastro, lista de cadastros" />
+    <!--descrição do nosso site-->
+    <meta name="description" content="sistema de cadastro" />
+    <!--inseri um logo para o meu sistema-->
+    <link href="../Content/images/logo-horse.png" rel="shortcut icon" />
+
+    <title>Projeto LGroup - aula 01</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <!--<link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />-->
+    <link href="http://bootswatch.com/cyborg/bootstrap.min.css" rel="stylesheet" />
+
+
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+</head>
+
+
+<!--http://bootswatch.com/-->
+<!--https://www.iconfinder.com/-->
+
+
+<body class="container">
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid"> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Lgroup</a>      
+             
+               
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Cadastro <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Lista de Usuários</a></li>
+                    
+                </ul>  
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+    <!--<nav>
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Lista de Alunos</a></li>
+        </ul>
+    </nav>-->
+
+     <!--hgroup = agrupador de tag's -->
+    <hgroup class="text-center text-uppercase">
+        <h1><strong>Lgroup</strong></h1>
+        <h3>Sistema de Cadastro de Alunos</h3>
+        <p><strong>Aqui algumas considerações</strong></p>
+    </hgroup>
+
+    <!--separador de conteúdo-->
+    <hr />
+   
+    <fieldset >
+         <!--legenda da borda-->
+        <legend>Formulário de Cadastro de Alunos</legend>
+        <!--criamos um formulário de envio é recebimento de informação-->
+        <form>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-12 form-group">
+                    <label>Nome do Aluno:</label>
+                    <!--campo de interação com o usuário da página-->
+                    <input type="text" required="required" title="Campo Obrigatório" placeholder="Insira seu nome" class="form-control" />
+                </div>
+            </div>
+
+            <!--ajustar a várias resoluções  -->
+
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-lg-2  form-group">
+                    <label>Idade:</label>
+                    <input type="number" placeholder="Insira sua Idade" title="Campo Obrigatório" required="required" class="form-control" />
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6  form-group">
+                    <label>E-mail:</label>
+                    <input type="email" placeholder="Insira seu e-mail" required="required" title="Campo e-mail é obrigatório" class="form-control" />
+                </div>
+                <div class="col-md-3 col-sm-3 col-lg-3 form-group">
+                    <label>Data de Nascimento:</label>
+                    <input type="date" class="form-control" />
+                </div>
+            </div>
+
+
+            <div >
+                 <input type="submit" class="btn btn-primary" value="enviar" />
+                <input type="reset" class="btn btn-success" value="limprar" />
+            </div>
+
+        </form>
+    </fieldset>
+
+
+    <br />
+    <footer>
+        <p><mark><small>site desenvolvido por mim &copy;</small> </mark></p>
+    </footer>
+
+
+    <!--informações que serão impressas na tela-->
+</body>
+</html>
